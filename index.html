@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="User Management.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>User Dashboard</h1>
+
+    <!-- Form to add user -->
+    <form id="user-form">
+      <input type="text" id="name" placeholder="Enter name" required />
+      <select id="role">
+        <option value="Admin">Admin</option>
+        <option value="RegisteredUser">Registered User</option>
+        <option value="GuestUser">Guest</option>
+      </select>
+      <button type="submit">Add User</button>
+    </form>
+
+    <!-- Section to display users -->
+    <div id="user-list" class="user-list"></div>
+  </div>
+
+  <script src="User Management.js"></script>
+</body>
+</html>
